@@ -1,0 +1,8 @@
+<library path="obstacles_rviz_plugin">
+
+  <class name="obstacles_rviz_plugin/ObstaclesDisplay" type="obstacles_rviz_plugin::ObstaclesDisplay" base_class_type="rviz_common::Display">
+    <description>Obstacles Display</description>
+    <message_type>obstacle_detector_interfaces/msg/Obstacles</message_type>
+  </class>
+
+</library>
