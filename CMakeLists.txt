@@ -24,6 +24,7 @@ find_package(rviz_ogre_vendor REQUIRED)
 find_package(pluginlib REQUIRED)
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
 find_package(obstacle_detector_interfaces REQUIRED)
+find_package(cart_interfaces REQUIRED)
 # find_package(obstacle_detector REQUIRED)
 
 include_directories(include src ${OGRE_INCLUDE_DIRS} ${OGRE_INCLUDE_DIRS}/Paging)
@@ -32,6 +33,7 @@ set(CMAKE_AUTOMOC ON)
 
 add_library(${PROJECT_NAME} SHARED
   src/obstacles_display.cpp
+  src/target_obstacle_display.cpp
   src/circle_visual.cpp
   src/segment_visual.cpp
 )
@@ -42,6 +44,7 @@ ament_target_dependencies(${PROJECT_NAME}
   rviz_rendering
 
   obstacle_detector_interfaces
+  cart_interfaces
   # obstacle_detector
 )
 

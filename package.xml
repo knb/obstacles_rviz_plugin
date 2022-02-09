@@ -17,6 +17,7 @@
   <depend>rviz_rendering</depend>
   <depend>rviz_ogre_vendor</depend>
   <depend>obstacle_detector_interfaces</depend>
+  <depend>cart_interfaces</depend>
   <!-- <depend>obstacle_detector</depend> -->
 
   <export>

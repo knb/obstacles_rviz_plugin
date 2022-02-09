@@ -5,4 +5,9 @@
     <message_type>obstacle_detector_interfaces/msg/Obstacles</message_type>
   </class>
 
+  <class name="obstacles_rviz_plugin/TargetObstacle" type="obstacles_rviz_plugin::TargetObstacleDisplay" base_class_type="rviz_common::Display">
+    <description>Target Obstacle Display</description>
+    <message_type>cart_interfaces/msg/TargetObstacle</message_type>
+  </class>
+
 </library>
